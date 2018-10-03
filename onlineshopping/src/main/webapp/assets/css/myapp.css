@@ -70,7 +70,7 @@ custom styling
 }
 
 .footer{
-	position:fixed;
+	position:absolute;
 	bottom:15px;
 	height:60px;
 }
