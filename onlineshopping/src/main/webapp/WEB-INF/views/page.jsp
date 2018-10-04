@@ -65,13 +65,19 @@
 		<c:if test="${userClickContact == true }">
 			<%@include file="contact.jsp"%>
 		</c:if>
+		
+		<!-- Load only when user clicks contact -->
+		<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+			<%@include file="listProduct.jsp"%>
+		</c:if>
+		
         </div>
 
 		<!-- Footer comes here-->
 		<%@include file="./shared/footer.jsp"%>
 
 		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="jquery/jquery.min.js"></script>
 		<script src=${js}/bootstrap.bundle.min.js"></script>
 
 		<!--     Self coded javascript -->
